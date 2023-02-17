@@ -1,25 +1,19 @@
 # Building a CI/CD Pipeline to Azure App Service
-<p align="center">
-  <a href="https://github.com/vuongvx96/nd082-Azure-Cloud-DevOps-Project-2/actions/workflows/python-app.yml">
-    <img src="https://github.com/vuongvx96/nd082-Azure-Cloud-DevOps-Project-2/actions/workflows/python-app.yml/badge.svg" />
-  </a>
-  <a href="https://dev.azure.com/XUANVUONG444/udacity-project-2/_build/latest?definitionId=6&branchName=main">
-    <img src="https://dev.azure.com/XUANVUONG444/udacity-project-2/_apis/build/status/vuongvx96.nd082-Azure-Cloud-DevOps-Project-2?branchName=main" />
-  </a>
-</p>
-
+ 
 ## Introduction
-In this project, you will build a Github repository from scratch and create a scaffolding that will assist you in performing both Continuos Integration and Continuous Delivery. You'll use Github Actions along with a Makefile, requirements.txt and application code to perform an initial lint, test, and install cycle. Next, you'll integrate this project with Azure Pipelines to enable Continuos Delivery to Azure App Service.
+
+You will develop a Github repository from scratch as part of this project, as well as a scaffolding that will help you carry out Continuous Integration and Continuous Delivery. An initial lint, test, and install cycle will be carried out using Github Actions, a Makefile, requirements.txt, and application code. To allow continuous delivery to the Azure App Service, you must next integrate this project with Azure Pipelines.
+
 
 ## Project Plan
-* Link to Trello's board for the project - (https://trello.com/b/bWJdWUuV/ml-prediction-service)
-* Link to a spreadsheet - (https://docs.google.com/spreadsheets/d/1Lzg_PK2LK9EHPgXwikktBw8eFCFvqUem5jsqod4dIow/edit?usp=sharing)
+* Link to Trello's board for the project - https://trello.com/invite/b/IWvJcQ4K/ATTI457ef57f868643c02b1e21b2ea27e50e16A49E9B/udacityproject
+* Link to a spreadsheet   https://docs.google.com/spreadsheets/d/1hMzmB58AuYoqAk0b0jgEOlYW_f8XmWiO/edit?usp=share_link&ouid=106091926904970901003&rtpof=true&sd=true
 
 ## Pre requisites
 
 * An Azure Account (https://portal.azure.com/)
 * A GitHub Account (http://github.com/)
-* An Azure DevOps Account (https://dev.azure.com/)
+ 
 
 ## First: CI Pipeline with GitHub Actions
 
@@ -45,14 +39,7 @@ cat ~/.ssh/id_rsa.pub
 ![cloning repository](./screenshots/screen%201%20-%20cloning%20repo.png)
 
 * Project Scaffolding ( files):
-
-| Plugin | README |
-| ------ | ------ |
-| Makefile | to create shortcuts to build, test, and deploy a project|
-| requirements.txt| to list what packages a project needs |
-| hello.py | a basic python app |
-| test_hello.py | the test python file to above app|
-
+ 
 Create a virtual environment for your application.
 
 ```sh
@@ -195,31 +182,7 @@ Port: 443
 
 ![load testing using locust](./screenshots/screen%2010%20-%20locust%20report.png)
 ![locust charts](./screenshots/screen%2010%20-%20locust%20charts.png)
-
-Remaining screenshots can be checked in the screenshot folder.
-
-## CLEANING OUT
-
-* delete the resource group of your webapp created.
-
-> At portal enter to your webapp service , locate the resource group.
-> Go to that resource group and delete it.
-> Wait for the notification of deletion .
-> can close of the Azure portal
-
-## Future Enhancements
-
-* Adding more test cases.
-* Creating a UI for making predictions.
-* Using Github Actions instead of Azure pipelines.
-* Run the app on Kubernetes cluster
-
+ 
+ 
 ## YouTube Demo
-
-Link to YouTube Demo Video -> (https://youtu.be/fbfY22X4n24)
-
-## License
-
-MIT
-
-**Free Software, Cool!**
+  
