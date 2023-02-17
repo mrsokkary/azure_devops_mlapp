@@ -21,7 +21,8 @@ You will develop a Github repository from scratch as part of this project, as we
 
 ### Architectural Diagram - CI - GitHub Actions
 
-![Architectural Diagram](./screenshots/ci-diagram.png)
+ ![image](https://user-images.githubusercontent.com/27645039/219801353-38d2d4f4-9957-48e2-a5d3-f39942c2b440.png)
+
 
 ### Instructions
 
