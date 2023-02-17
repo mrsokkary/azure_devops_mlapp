@@ -63,8 +63,7 @@ Note: You can add the GitHub Actions badge to you README.md ( it's a good practi
 ## Second : CI/CD Pipeline with AZURE DEVOPS
 
 ### Azure DevOps Pipelines Architectural Diagram
-
-![CD Diagram](./screenshots/cd-diagram.png)
+ 
 
 * Go to Azure Devops page  and sign in it, create a new Project inside your organization ( if you don't have an organization create one first).
 
@@ -84,14 +83,11 @@ az webapp up -n <your-appservice>
 >Note 3: This operation can take a while to complete ...
 
 * In  your new Project in Azure DevOps, go to Pipelines --> New Pipeline --> GitHub --> Select Your Repo --> select `an Existing YAML file`
-
-![creating azure pipeline](./screenshots/screen%205%20-%20creating%20azure%20pipeline.png)
+ 
 
 > Choose the `main` branch and the file named `azure-pipelines.yml` as is showed on the figure below
 > Update the `azure-pipelines.yml` with the name of your webapp and your Service connection point ( Check YouTube video for a detailed explanation)
-> Modifications are at variables webAppName & environmentName too !!!
-
-![existing yaml file](./screenshots/screen%205a%20-%20existing%20yaml%20file.png)
+> Modifications are at variables webAppName & environmentName too !!! 
 
 * Choose Run Pipeline and your Azure DevOps Pipeline is going to start to be deployed with all his stages ( in this case 2: Build & deploy)
  
@@ -116,17 +112,10 @@ and then perform a quick lint and push the changes to your repo:
 make lint
 git add .
 git commit -m "app.py updated"
-git push origin main
-```
-
-![Azure devops pipeline integrated](./screenshots/screen%206b%20-%20azure%20devops%20pipeline%20integrated%20to%20repo.png)
- 
+git push origin main 
 
 * Check that the webapp is running opening this URL, example:
-
-```sh
-https://mywebapp216240.azurewebsites.net/
-```
+ 
  
 
 * Update the file `make_predict_azure_app.sh` with the webapp service end point. Assign execute permission for this file
