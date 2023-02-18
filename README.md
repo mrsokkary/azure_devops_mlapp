@@ -104,7 +104,7 @@ html = "<h3">Sklearn Prediction Home</h3>"
 for this one:
 
 ```sh
-html = "<h2>Sklearn Prediction Home APP - REST API</h2>"
+html = "<h2>Sklearn Prediction Home APP - R 1.6</h2>"
 ```
 
 and then perform a quick lint and push the changes to your repo:
